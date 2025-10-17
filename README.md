@@ -14,8 +14,8 @@ and the current UTC timestamp in ISO 8601 format.
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone <your-repo-url>.git
-cd <your-repo-name>
+git clone https://github.com/Newkoncept/hng.git
+cd hng
 ```
 
 ### 2️⃣ Create and activate a virtual environment
@@ -67,7 +67,7 @@ python manage.py runserver 0.0.0.0:8000
 Open your browser or use curl/Postman:
 
 ```bash
-curl -s http://127.0.0.1:8000/me | jq
+curl -s http://127.0.0.1:8000/me
 ```
 
 ✅ Expected Response:
@@ -167,7 +167,6 @@ hng/
 │   ├── urls.py          # Root URL router
 │   └── wsgi.py
 │
-├── .env.example         # Sample environment variables
 ├── .gitignore           # Ignore .env, venv, etc.
 ├── manage.py            # Django entry point
 ├── requirements.txt     # Project dependencies
